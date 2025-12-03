@@ -24,6 +24,7 @@ const formatCurrency = (amount) => {
 };
 
 // --- Komponen Pembantu Detail Hasil ---
+// eslint-disable-next-line no-unused-vars
 const DetailItem = ({ icon: Icon, title, value, color, isBold = false }) => (
     <div className="flex items-start p-4 bg-white rounded-xl shadow-md border border-gray-200">
         <Icon className={`w-5 h-5 mr-3 mt-1 ${color}`} />
@@ -129,6 +130,7 @@ const App = () => {
     );
 
     const platformButtonClass = (key) => {
+      // eslint-disable-next-line no-unused-vars
         const platform = PLATFORM_RATES[key];
         return `flex flex-col items-center justify-center p-3 sm:p-4 rounded-xl transition-all duration-200 transform shadow-md w-full h-24 sm:h-auto text-center ${
             platformKey === key
